@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Vaccination</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/logui.png" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+</head>
+
+<body>
+  <!--Inicio de la cabezera-->
+  <header id="header">
+    <h1><a href="index.html">Vaccination</a></h1>
+    <!--Menú de navegación-->
+    <nav id="nav">
+      <ul>
+        <li>
+          <a href="index.html">Database</a>
+        </li>
+
+        <li>
+          <a href="index.html">Education</a>
+        </li>
+
+        <li>
+          <a href="index.html">News</a>
+        </li>
+
+        <li>
+          <a href="index.html">Regulation</a>
+        </li>
+
+        <li>
+          <a href="index.html">Hoax Buster</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Fin del menú-->
+  </header>
+
+  <div id="content">
+    <div id="sections">
+      <!--PRIMERA SECCIÓN-->
+      <section id="frontend">
+        <h2 class="titulo">
+          Fight Virus<br />
+          With Vaccines
+        </h2>
+        <img class="vacuna1" src="./assets/img/vacuna1.2png.png" alt="Vacuna 1">
+        <p class="vacunap">
+          Let's stop this pandemic by killing the Virus<br />
+          with a vaccine, don't let yourself an your<br />
+          family get infected.
+        </p>
+        <div class="iconShield"><img id="escudito" src="./assets/img/shield2.png" alt="shield check"> Best Protection
+        </div>
+        <div class="iconStar"><img id="escudito" src="./assets/img/star.png" alt="shield check"> Selected Vaccines</div>
+      </section>
+
+      <!--Schedule-->
+      <div class="schedule">
+        <img class="timer" src="./assets/img/timer.png" alt="location">
+        <h3 id="message">Schedule your vaccinations</h3>
+
+        <!--Location-->
+        <div class="locationdiv">
+          <form class="form-inline" action="#">
+            <label for="email"><img class="locationpin" src="./assets/img/location-pin.png"
+                alt="location">Location</label><br>
+            <input type="email" class="textboxlocation" id="email" placeholder="Jakarta Utara" name="Location">
+        </div>
+
+        <!--Calendar-->
+        <div class="calendardiv">
+          <label for="email"><img class="calendarIcon" src="./assets/img/calendar.png" alt="Calendar">Date</label><br>
+          <input type="email" class="textboxlocation" id="email" placeholder="08 July 2021" name="Date">
+        </div>
+
+        <!--Vaccine type-->
+        <div class="vaccinetypediv">
+          <label for="email"><img class="calendarIcon" src="./assets/img/edit.png" alt="Vaccine Type">Vaccine
+            Type</label><br>
+          <input type="email" class="textboxlocation" id="email" placeholder="Moderna" name="Vaccine Type">
+        </div>
+
+        <!--Button submit-->
+        <div class="submitbtndiv">
+          <input type="button" id="submitbtn" placeholder="Submit" value="Submit" name="Submit">
+        </div>
+
+        <img src="./assets/img/Vacunasbanner.png" id="vacunabanner" alt="">
+
+
+      </div>
+
+      <!--SEGUNDA SECCIÓN-->
+      <section id="backend">
+        <div class="whyshould">
+          <!--Why shoud i vaccine div-->
+          <h2 class="titlewhy">Why should I vaccine?</h2>
+
+          <p>
+            In order to avoid any doubts about getting the COVID-19
+            vaccine, identify the following 4 benefits of COVID-19
+            vaccination :
+          </p>
+
+        </div>
+
+        <!--Minimize the spread div-->
+        <div class="spread">
+          <img src="./assets/img/virus.png" alt="virus spread" class="spreadIcon">
+          <h3 class="titlespread">Minimize the spread of viruses</h3>
+
+          <p>
+            Vaccine has been proven
+            effective to prevent someone
+            from getting infected with
+            Coronavirus
+          </p>
+
+        </div>
+
+        <!--Forming antibodies div-->
+        <div class="anti">
+          <img src="./assets/img/protection.png" alt="forming antibodies" class="formingIcons">
+          <h3 class="formingA">Forming Antibodies</h3>
+
+          <p>
+            COVID-19 vaccine proven to
+            help shape antibody<br>
+            response for immune system
+          </p>
+
+        </div>
+
+
+        <!--Protecting people div-->
+        <div class="protecting">
+          <img src="./assets/img/group.png" alt="protecting people nearby" class="peopleIcon">
+          <h3 class="protectingA">Protecting people nearby</h3>
+
+          <p>
+            The benefits of COVID-19
+            vaccination are the vaccine
+            that we get can also help
+            protect people around us.
+          </p>
+
+        </div>
+
+        <!--Protecting people div-->
+        <div class="immunity">
+          <img src="./assets/img/bar-chart.png" alt="Creating group immunity" class="chartIcon">
+          <h3 class="immunityG">Creating group immunity</h3>
+
+          <p>
+            COVID-19 vaccination is also
+            beneficial for creating group
+            immunyty or herd immunity
+          </p>
+        </div>
+        <div class="clearfix"></div>
+
+
+        <!--Preparations before vaccine div -->
+        <div id="preparations">
+          <img class="vacuna2" src="./assets/img/vacuna2.png" alt="Vacuna 2">
+
+          <div class="preparationstext">
+            <h2 class="titlewhy">Preparations Before Vaccine</h2>
+            <p class="vacunap">
+              the success of vaccines is strongly influenced by the <br>
+              strength of the body's immune system. Therefoe, there are<br>
+              several things that can be tried to make the COVID-19<br>
+              vaccine work :
+            </p>
+          </div>
+        </div>
+        <div class="detalles"><img src="./assets/img/expand-button.png" class="test" alt="">
+          <details class="mas">
+            <summary>Avoid alcoholic beverages</summary>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Ut ea iste ducimus pariatur aliquid voluptatibus assumenda
+              illo earum voluptatum consequatur debitis facilis, nulla
+              vel reiciendis nam alias at blanditiis? Facere.</p>
+          </details>
+        </div>
+
+        <div class="detalles"><img src="./assets/img/expand-button.png" class="test" alt="">
+          <details class="mas">
+            <summary>Avoid stress</summary>
+            <p>Stress has a profound effect on immune work.
+              Moreover, prolonged stress can increase cortisol
+              production and oxidative stress in the body.</p>
+          </details>
+        </div>
+
+        <div class="detalles"><img src="./assets/img/expand-button.png" class="test" alt="">
+          <details class="mas">
+            <summary>Eath healthy food</summary>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Ut ea iste ducimus pariatur aliquid voluptatibus assumenda
+              illo earum voluptatum consequatur debitis facilis, nulla
+              vel reiciendis nam alias at blanditiis? Facere.</p>
+          </details>
+        </div>
+
+        <div class="detalles"><img src="./assets/img/expand-button.png" class="test" alt="">
+          <details class="mas">
+            <summary>Get enough sleep</summary>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Ut ea iste ducimus pariatur aliquid voluptatibus assumenda
+              illo earum voluptatum consequatur debitis facilis, nulla
+              vel reiciendis nam alias at blanditiis? Facere.</p>
+          </details>
+        </div>
+
+        <div class="detalles"><img src="./assets/img/expand-button.png" class="test" alt="">
+          <details class="mas">
+            <summary>Exercise or physical activity</summary>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Ut ea iste ducimus pariatur aliquid voluptatibus assumenda
+              illo earum voluptatum consequatur debitis facilis, nulla
+              vel reiciendis nam alias at blanditiis? Facere.</p>
+          </details>
+        </div>
+
+
+        <!--Emergency contact -->
+        <div id="emergency">
+          <img class="vacuna3" src="./assets/img/vacuna3.png" alt="Vacuna 3">
+
+          <div class="emergencycontact">
+            <h2 class="titlewhy">Emergency contact</h2>
+            <p class="vacunap">
+              Contact one of the contacts below if you or your family feel
+              unwell and have similar symptoms suchs as COVID-19, make
+              sure you also take care of yourself before reporting us :
+            </p>
+          </div>
+        </div>
+
+        <div class="varicons">
+          <div class="phonediv">
+            <img src="./assets/img/phone.png" alt="Phone" class="phoneIcon">
+            Call<br>
+            <p class="variconsdata">021.123.145.14</p>
+            <input type="button" id="callbtn" placeholder="Submit" value="Call Now" name="Submit">
+          </div>
+
+          <div class="phonediv">
+            <img src="./assets/img/chat.png" alt="Chat" class="phoneIcon">
+            Chat<br>
+            <p class="variconsdata">021.123.145.14</p>
+            <input type="button" id="callbtn" placeholder="Submit" value="Chat Now" name="Submit">
+          </div>
+
+          <div class="phonediv">
+            <img src="./assets/img/video.png" alt="Chat" class="phoneIcon">
+            Video Call<br>
+            <p class="variconsdata">021.123.145.14</p>
+            <input type="button" id="callbtn" placeholder="Submit" value="Video Call Now" name="Submit">
+          </div>
+
+          <div class="phonediv">
+            <img src="./assets/img/email.png" alt="Chat" class="phoneIcon">
+            Message<br>
+            <p class="variconsdata">021.123.145.14</p>
+            <input type="button" id="callbtn" placeholder="Submit" value="Message Now" name="Submit">
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <!--Footer-->
+  <div class="clearfix"></div>
+  <footer id="footer">
+
+    <div class="footVacc">
+      <h2>Vaccination</h2>
+      <p>Our goal is to help the<br>
+        world free from the<br>
+        ongoing pandemic<br>
+      </p>
+    </div>
+
+    <div class="footAbout">
+      <h2>About</h2>
+      <a href="#">about us</a><br>
+      <a href="#">Features</a><br>
+      <a href="#">News & Blog</a>
+    </div>
+
+    <div class="footCompany">
+      <h2>Company</h2>
+      <a href="#">How We Work?</a><br>
+      <a href="#">Capital</a><br>
+      <a href="#">Security</a><br>
+    </div>
+
+    <div class="footSupport">
+      <h2>Support</h2>
+      <a href="#">FAQs</a><br>
+      <a href="#">Support Center</a><br>
+      <a href="#">Contact Us</a><br>
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+  <p class="rightsreserved">@2021 Vaccination &copy;. All rights reserved.</p>
+
+  <a href="#" class="endtext">Terms & Agreements</a>
+  <a href="#" class="endtext">Privacy Policy</a>
+</body>
+
+</html>

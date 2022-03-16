@@ -1,0 +1,704 @@
+/*FUENTES*/
+@font-face{
+    font-family: "nevis";
+    src: url("fonts/nevis.eot");
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"),
+         url("fonts/nevis.woff") format("woff"),
+         url("fonts/nevis.ttf") format("truetype"),
+         url("fonts/nevis.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")
+    url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot") format("embedded-opentype"),
+         url("fonts/websymbols-regular-webfont.woff") format("woff"),
+         url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/*ESTILOS GENERALES*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    background-color: #FFFFFF;
+}
+
+
+p{
+    color: #6D7B93;
+    font-size: 20px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border: 1px solid blue;
+    border-radius: 2px;
+    width: 60px;
+    padding: 3px;
+    cursor: pointer;
+    color: white;   
+}
+
+
+/*CABECERA*/
+#header{
+    padding-top: 20px;
+    min-width: 1024px;
+    width: 100%;
+    height: 100px;
+}
+
+#header a{
+    text-decoration: none;
+}
+
+
+#header h1{                     
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 10px;
+    padding-left: 40px;
+    position: absolute;
+    font-size: 30px;
+    color: #3858D6;
+    font-family: sans-serif, Helvetica, Arial;
+    text-shadow:0px 2px 1px #e6dfdf;    
+    transition: all 300ms;               
+}
+
+#header h2{                    
+    text-align: center;
+    font-size: 20px;
+    color: #5a382a;
+    font-family: "nevis";
+    letter-spacing: 4px;
+    text-shadow:0px 2px 1px #e6dfdf;    
+    transition: all 300ms;               
+}
+
+#header h1:hover{
+    text-shadow: 0px 2px 1px #e6dfdf, 0px 0px 4px #4A2D21;
+}
+
+#header h1 a{                     
+    text-align: center;
+    font-size: 40px;
+    color: #3858D6;
+}
+
+
+
+/*BARRA DE NAVEGACIÓN*/
+#nav{
+    width: 100%;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: white;
+    font-family: sans-serif, Helvetica, Arial;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#nav ul{
+    list-style: none;
+    padding-top: 40px;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 800px;
+    float: right;
+}
+
+#nav > ul > li{
+    line-height: 40px;
+    float: left;
+    transition: all 300ms;
+}
+
+#nav > ul > li a{
+    display: block;           
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 40px;
+    float: left;
+    color: #6D7B93;
+    text-decoration: none;
+}
+
+
+
+#nav > ul > li:hover{
+    background-color: #3555D3;
+    border-radius: 4%;
+    box-shadow: 0px 0px 4px #3555D3;
+}
+
+#nav > ul > li > a:hover{
+    color: white;
+}
+
+
+
+/*CONTENIDO*/
+#content{
+    font-family: sans-serif, Arial, Helvetica;
+    width: 100%;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+
+/*SECCIONES*/
+#sections{
+    /*float: right; COMENTADOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/ 
+    width: 100%;
+    font-family: sans-serif, Arial, Helvetica;
+    
+
+}
+
+#sections .titulo{
+    display: block;
+    width: 530px;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 100px;
+    padding-top: 20px;
+    margin-left: 25px;
+    padding-bottom: 10px;
+    color: #1F3E72;
+
+}
+
+#sections section{
+    
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sections .date{
+    color: gray;
+    font-size: 14px;
+}
+
+#sections .sticker1,
+#sections .sticker2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+
+#sections .sticker2{
+    margin-left: 785px;
+}
+
+#history{
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    
+}
+
+/*PIE DE PÁGINA*/
+
+#footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3656D4;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+
+
+.vacunap{
+    margin-left: 35px;
+}
+
+
+
+.vacuna1{
+    display: block;
+    float: right;
+    margin-top: -300px;
+    margin-right: -30px;
+    width: 800px;
+    height: 850px;
+    z-index: unset;
+}
+
+.iconShield{
+    margin: 50px;
+    display: block;
+    float: left;
+}
+
+.iconStar{
+    margin: 50px;
+    padding-right: 200px;
+    display: block;
+    float: right;
+}
+
+
+
+
+.vaccineType{
+    width: 24px;
+    height: 24px;
+}
+
+.timer{
+    width: 24px;
+    height: 24px;
+    float: left;
+}
+
+
+#message{
+    position: absolute;
+    margin-top: -1px;
+    margin-left: 40px;
+}
+
+
+/*Schedule Div*/
+.schedule{
+    display: block;
+    width: 1120px;
+    height: 169px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin-top: -213px;
+    margin-left: 150px;
+    
+}
+
+
+
+/*Location seccion*/
+.locationdiv{
+    float: left;
+    margin-left: 20px;
+    margin-top: 60px;
+    margin-top: 40px;
+    display: block;
+    width: 200px;
+    height: 100px;
+
+}
+
+.textboxlocation{
+    width: 150px;
+    height: 40px;
+    margin-left: 26px;
+    font-size: 20px;
+    
+}
+
+label{
+    font-size: 17px;
+    color: #6D7B93;
+}
+
+.locationpin{
+    width: 24px;
+    height: 24px;
+}
+
+/*Calendar div*/
+.calendardiv{
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: block;
+    width: 200px;
+    height: 100px;
+
+}
+
+.calendarIcon{
+    width: 24px;
+    height: 24px;
+}
+
+
+/*Vaccine type div*/
+.vaccinetypediv{
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;
+    display: block;
+    width: 200px;
+    height: 100px;
+
+}
+
+/*Submit btn*/
+
+.submitbtndiv{
+    width: auto;
+    float: left;
+}
+
+#submitbtn{
+    background-color: #3656D4;
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+/*Banner vacunas*/
+#vacunabanner{
+    width: 1500px;
+    margin-left: -240px;
+    margin-top: 70px;
+}
+
+.whyshould{
+    margin-top: 180px;
+    width: 35%;
+}
+
+
+#email2{
+    width: 120px;
+    margin-left: 30px;
+}
+
+.submit{
+    display: block;           /*Para poder desplazar los elementos sin problemas*/
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 220px;
+    margin-top: -145px;
+    line-height: 40px;
+    float: left;
+    color: #FFFFFF;
+    background-color: #2848C6;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/*icon color: #FFD012*/
+/*why vaccine div   2C4CCA*/
+
+
+.whyshould{
+    margin-left: 40px;
+} 
+
+
+
+#backend h2{
+    color: #2253a7;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+/*Minimize the spread div*/
+.spread{
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.spreadIcon{
+    width: 64px;
+    height: 64px;
+}
+
+
+/*Forming antibodies div*/
+.anti{
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+
+.formingIcons{
+    width: 64px;
+    height: 64px;
+}
+
+
+/*Protecting people nearby div*/
+.protecting{
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+.peopleIcon{
+    width: 64px;
+    height: 64px;
+}
+
+/*Creating group immunity*/
+.immunity{
+    display: block;
+    float: left;
+    width: 20%;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+
+.chartIcon{
+    width: 64px;
+    height: 64px;
+}
+
+/*Preparations before vaccine section*/
+
+#preparations{
+    border: 1px solid #FFFFFF;
+    margin-top: 150px;
+}
+
+.vacuna2{
+    display: block;
+    float: left;
+    width: 800px;
+    height: 850px;
+    margin-left: -100px;
+    z-index: unset;
+    margin-bottom: 100px;
+    
+}
+
+.preparationstext{
+    display: block;
+    float: left;
+}
+
+.preparationstext{
+    margin-left: 100px;
+}
+
+#preparations h2{
+    color: #2253a7;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+/*Elemento desplegable*/
+
+.mas{
+    float: left;
+    width: 500px;
+    margin-left: 135px;
+}
+
+.detalles{
+    float: left;
+    margin-top: 26px;
+    margin-bottom: 100px;
+    color: #264476;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.detalles :hover {
+    cursor: pointer;
+    border-radius: 4%;
+}
+
+
+.test{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/*Emergency contact section*/
+#emergency{
+    margin-top: 180px;
+}
+
+#emergency h2{
+    color: #2253a7;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.emergencycontact{
+    margin-top: 1000px;
+    width: 600px;
+    height: 200px;
+}
+
+.vacuna3{
+    display: block;
+    float: right;
+    width: 800px;
+    height: 850px;
+    margin-left: -100px;
+    z-index: unset;
+    
+}
+
+.varicons{
+    width: 600px;
+    margin-top: 100px;
+}
+
+.phonediv{
+    float: left;
+    margin-left: 50px;
+
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1F3E72;
+}
+
+.phoneIcon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.variconsdata{
+    font-size: 14px;
+}
+
+
+
+
+#callbtn{
+    background-color: #FFFFFF;
+    border: none;
+    color: #3656D4;
+    width: 120px;
+    height: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: auto;
+    padding: 10px;
+}
+
+#callbtn:hover{
+    background-color: #3656D4;
+    border: none;
+    color: #FFFFFF;
+    transition: all 300ms;
+   
+}
+
+.footVacc{
+    float: left;
+    text-align: left;
+    margin-left: 60px;
+}
+
+.footVacc a{
+    color: #6D7B93;
+    
+}
+
+.footAbout{
+    float: left;
+    margin-left: 800px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.footCompany{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.footSupport{
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.footAbout a{
+    color: #6D7B93; 
+}
+
+.footCompany a{
+    color: #6D7B93; 
+}
+
+.footSupport a{
+   color: #6D7B93;
+}
+
+.rightsreserved{
+    float: left;
+    margin-right: 750px;
+}
+
+.endtext{
+    color: #6D7B93;
+    font-size: 20px;
+    margin-left: 10px;
+}
